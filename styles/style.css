@@ -8,7 +8,7 @@ header{
     width: 100%;
     background-color: rgba(255, 144, 14, 0.1);
     /* padding: 30px 240px 30px 240px; */
-    padding: 30px auto;
+    padding: 30px 30px;
 }
 .container{
     max-width: 1452px;
@@ -89,8 +89,49 @@ header nav ul a{
 .image{
     padding-top: 50px;
 }
+.main-container{
+    padding-top: 85px;
+    padding-bottom: 130px;
+}
+.fearures-sec{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+}
+.images{
+    max-width: 708px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2,1fr);
+}
+.images img{
+    max-width: 342px;
+    /* width: 100%; */
+}
+.fearures-text{
+    max-width: 567px;
+    width: 100%;
+}
+.fearures-text h1{
+    font-size: 2,5em;
 
+}
+.fearures-text h1 span:first-child{
+    color: #131313;
+}
+.fearures-text h1 span:last-child{
+    color: #FF900E;
+}
+.fearures-text p{
+    margin-top: 24px;
+    margin-bottom: 30px;
+    line-height:24px ;
+}
 @media screen and (max-width:576px){
+    header{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
     nav{
         flex-direction: column;
         gap: 30px;
