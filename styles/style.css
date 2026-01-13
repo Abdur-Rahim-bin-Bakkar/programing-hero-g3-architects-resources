@@ -272,12 +272,16 @@ font-size: 0.4em;
     right: 0;
 }
 .section3 .card-box{
-    /* width: 95%;
-    margin: 0 auto; */
+    width: 95%;
+    margin: 0 auto;
     
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 30px;
+}
+.section3 .card-box .card-item{
+    grid-column: span 1;
+    grid-row: span 1;
 }
 .content .text-content p{
     max-width: 100%;
@@ -285,6 +289,7 @@ font-size: 0.4em;
 .fearures-text p {
    max-width: 60%;
 }
+
 }
 @media screen and (min-width:577px) and (max-width:768px) {
     .images{
